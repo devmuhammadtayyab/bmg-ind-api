@@ -1,0 +1,136 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packing Slip</title>
+    <style>
+      .title-td{ width: 700px; }
+      td{ width: 300px; }
+      .text-wrapper p{ font-weight: 500; font-size: 14px; margin: 0; }
+      .text-wrapper{ display: flex; flex-direction: column; grid-row-gap: 4px; }
+      .footer-wrapper p{ margin: 0; }
+      .footer-wrapper label{ font-weight: 600; font-size: 14px; }
+      .footer-wrapper{ display: flex; justify-content: space-between; align-items: center; grid-gap: 32px; }
+      .footer-overlay{ display: flex; flex-direction: column; grid-row-gap: 8px; margin-top: 16px; width: 150px; margin-left: auto; margin-right: 16px; }
+      p{ margin:0; }
+      .header{ display: flex; flex-direction: column; grid-row-gap: 8px; margin: 12px 0px 0px 0px; }
+      .sub-header{ display: flex; justify-content: space-between; align-items: baseline; margin: 0px 80px 8px; }
+      .sub-header-item { display: flex; grid-gap: 3px; align-items: baseline; margin-bottom: 24px; }
+      .sub-header-item h6 { font-weight: 600; font-size: 14px; }
+      .next-head{ display: flex; flex-direction: column; grid-row-gap: 4px; }
+      .next-head-right h6{ border-right: 1px solid grey; padding-right: 6px; margin:0px; margin-right: 6px; font-size: 14px; min-width: 94px; text-align: end; }
+      .next-head-right{ display: flex; align-items: baseline; grid-gap: 3px; }
+      .sub-header-item-right{ display: flex; flex-direction: column; grid-row-gap: 8px; }
+    </style>
+  </head>
+  <body style="margin: 32px; font-family: sans-serif; padding: 0; box-sizing: border-box; font-size: smaller;">
+    <p style="background-color: grey;padding:6px; text-align: center; color: #fff; font-weight: 600;">Packing Slip</p>
+    <div class="header">
+      <p>8063 North Fraser Way</p>
+      <p>Burnaby, BC V5J5M8</p>
+    </div>
+    <div class="sub-header">
+      <div class="sub-header-item">
+        <h6>Ship To:</h6>
+        <div class="next-head">
+          <p>YEG2</p>
+          <p></p>
+          <p>27383 92 Ave 1Y64</p>
+          <p>Acheson , AB T7X2X2 CA</p>
+        </div>
+      </div>
+      <div class="sub-header-item-right">
+        <div class="next-head-right">
+          <h6>Order #</h6>
+          <p>84RIUWQC</p>
+        </div>
+        <div class="next-head-right">
+          <h6>Date</h6>
+          <p>14/10/2024</p>
+        </div>
+        <div class="next-head-right">
+          <h6>User </h6>
+          <p></p>
+        </div>
+        <div class="next-head-right">
+          <h6>Ship Date </h6>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div>  
+      <table style="border: 1px solid; width: 100%; border-collapse: collapse;">
+        <thead style="background-color: grey;">
+          <tr>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Item</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Description</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Price</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Qty</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Qty in Box</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Ext. Price</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">V-084</td>
+      <td class="title-td" style="text-align: left; border-bottom: 1px solid grey; padding: 4px;"></td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">$13.98</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">29</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">
+        <div class="text-wrapper">
+          <p>Box 1: 29</p>
+        </div>
+      </td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">$405.42</td>
+    </tr><tr>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">FAS-179</td>
+      <td class="title-td" style="text-align: left; border-bottom: 1px solid grey; padding: 4px;"></td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">$10.99</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">1</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">
+        <div class="text-wrapper">
+          <p>Box 2: 1</p>
+        </div>
+      </td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">$10.99</td>
+    </tr></tbody>
+        </table>
+        <div class="footer-overlay">
+          <div class="footer-wrapper">
+            <label>Sub Total:</label>
+            <p>$416.41</p>
+          </div>
+          <div class="footer-wrapper">
+            <label>Shipping:</label>
+            <p>$0.00</p>
+          </div>
+          <div class="footer-wrapper">
+            <label>Total:</label>
+            <p>$416.41</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 64px;">
+      <table style="border: 1px solid; width: 100%; border-collapse: collapse;">
+        <thead style="background-color: grey;">
+          <tr>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Box Number</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Length</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Width</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Height</th>
+            <th style="border-width:0px;text-align: left; padding: 4px; color: #fff;">Weight</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">1</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">26.38</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">15.75</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">19.69</td>
+      <td style="text-align: left; border-bottom: 1px solid grey; padding: 4px;">0</td>
+    </tr></tbody>
+      </table>
+    </div>
+  </body>
+  </html>
+  
